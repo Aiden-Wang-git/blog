@@ -1,3 +1,8 @@
+body{
+    background: url("../img/bg.jpg");
+}
+
+
 .m-padded-mini{
     padding: 0.2em !important;
 }
@@ -40,12 +45,21 @@
 .m-opacity-mini{
     opacity: 0.8;
 }
+.m-opacity-tiny{
+    opacity: 0.6;
+}
 
 /*-----------display------------*/
 .m-inline-block{
     display: inline-block !important;
 }
 
+
+/*---------------container-----------*/
+.m-container-small{
+    max-width: 60em !important;
+    margin: auto !important;
+}
 
 /*-----------------------margin------------------*/
 .m-margin-tb-tiny{
