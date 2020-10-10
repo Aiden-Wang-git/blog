@@ -86,6 +86,12 @@ body{
     margin-bottom: 0.2em !important;
 }
 
+/*-------shadow----------------*/
+.m-shadow-small{
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
 /*---------------color--------------*/
 .m-black{
     color: #333333 !important;
