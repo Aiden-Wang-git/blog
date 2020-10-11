@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>分类</title>
+    <title>标签</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="static/css/me.css">
 </head>
@@ -16,8 +16,8 @@
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
                 <a href="#" class="m-item item m-mobile-hide"><i class=" home icon"></i>首页</a>
-                <a href="#" class="m-item item active m-mobile-hide"><i class=" idea icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+                <a href="#" class="m-item active item m-mobile-hide"><i class=" tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class=" calendar icon"></i>归档</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class=" info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
@@ -41,7 +41,7 @@
             <div class="ui top attached segment">
                 <div class="ui middle aligned two column grid">
                     <div class="column">
-                        <h2 class="ui teal header">分类</h3>
+                        <h2 class="ui teal header">标签</h3>
                     </div>
                     <div class="column right aligned ">
                         共<h2 class="ui orange  header m-inline-block m-text-thin">13</h3>个
@@ -49,17 +49,31 @@
                 </div>
             </div>
 
-            <!-- 分类类别 -->
-            <div class="ui attached segment">
-                <!-- 已经被选中的深色 -->
-                <div class="ui labeled button m-margin-tb-tiny">
-                    <a href="#" class="ui basic teal button">思考人生</a>
-                    <div class="ui basic teal left pointing label">23</div>
+            <!-- 标签类别 -->
+            <div class="ui segments m-margin-top-large">
+                <div class="ui secondary segment">
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <i class="tags icon"></i>标签
+                        </div>
+                        <div class="column right aligned">
+                            <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <!-- 未被选中的是灰色 -->
-                <div class="ui labeled button m-margin-tb-tiny">
-                    <a href="#" class="ui basic button">机器学习</a>
-                    <div class="ui basic left pointing label">2</div>
+                <div class="ui teal segment">
+                    <a href="#" target="_blank" class="ui teal label teal basic left pointing large m-margin-tb-tiny">
+                        标签1 <div class="detail">78</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui  label  basic left pointing large m-margin-tb-tiny">
+                        标签2 <div class="detail">78</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui  label  basic left pointing large m-margin-tb-tiny">
+                        标签3 <div class="detail">78</div>
+                    </a>
+                    <a href="#" target="_blank" class="ui  label basic left pointing large m-margin-tb-tiny">
+                        标签4 <div class="detail">78</div>
+                    </a>
                 </div>
             </div>
 
@@ -73,24 +87,31 @@
                                 这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体
                             </p>
                             <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <div class="ui mini horizontal link list">
-                                        <div class="item">
-                                            <img src="https://picsum.photos/id/1011/100/100" alt=""
-                                                class="ui avatar image">
-                                            <div class="content"><a href="#" class="header">王军</a></div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="calendar icon"></i>2020-10-08
-                                        </div>
-                                        <div class="item">
-                                            <i class="eye icon"></i>4399
+                                <div class="row">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1011/100/100" alt=""
+                                                    class="ui avatar image">
+                                                <div class="content"><a href="#" class="header">王军</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2020-10-08
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>4399
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                            class="ui label teal basic m-padded-mini m-text-thin">标签例子</a>
+                                    </div>
                                 </div>
-                                <div class="right aligned five wide column">
-                                    <a href="#" target="_blank"
-                                        class="ui label teal basic m-padded-mini m-text-thin">标签例子</a>
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="#" class="ui basic teal left pointing label m-padded-mini m-tex">方法论</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,24 +130,31 @@
                                 这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体这是博客的内容主体
                             </p>
                             <div class="ui stackable grid">
-                                <div class="eleven wide column">
-                                    <div class="ui mini horizontal link list">
-                                        <div class="item">
-                                            <img src="https://picsum.photos/id/1011/100/100" alt=""
-                                                class="ui avatar image">
-                                            <div class="content"><a href="#" class="header">王军</a></div>
-                                        </div>
-                                        <div class="item">
-                                            <i class="calendar icon"></i>2020-10-08
-                                        </div>
-                                        <div class="item">
-                                            <i class="eye icon"></i>4399
+                                <div class="row">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1011/100/100" alt=""
+                                                    class="ui avatar image">
+                                                <div class="content"><a href="#" class="header">王军</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2020-10-08
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>4399
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                            class="ui label teal basic m-padded-mini m-text-thin">标签例子</a>
+                                    </div>
                                 </div>
-                                <div class="right aligned five wide column">
-                                    <a href="#" target="_blank"
-                                        class="ui label teal basic m-padded-mini m-text-thin">标签例子</a>
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="#" class="ui basic teal left pointing label m-padded-mini m-tex">方法论</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
