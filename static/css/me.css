@@ -6,6 +6,9 @@ body{
 .m-padded-mini{
     padding: 0.2em !important;
 }
+.m-padded-tiny{
+    padding: 0.3em !important;
+}
 
 .m-padded-tb-mini{
     padding-top: 0.2em !important;
@@ -111,6 +114,19 @@ body{
 .m-mobile-show{
     display: none !important;
 }
+
+/*------------------------position-------------*/
+.m-fixed{
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom{
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+
 /*-----------------小屏手机时的样式--------------*/
 @media screen and (max-width:768px){
     .m-mobile-hide{
