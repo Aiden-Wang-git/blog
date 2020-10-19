@@ -20,20 +20,13 @@ public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(* com.lrm.web.*.*(..))")
+    @Pointcut("execution(* com.wj.blog.web.*.*(..))")
     public void log() {}
 
 
     @Before("log()")
     public void doBefore(JoinPoint joinPoint) {
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
-        String url = request.getRequestURL().toString();
-        String ip = request.getRemoteAddr();
-        String classMethod = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();
-        Object[] args = joinPoint.getArgs();
-        RequestLog requestLog = new RequestLog(url, ip, classMethod, args);
-        logger.info("Request : {}", requestLog);
+        logger.info("Request : {}",joinPoint);
     }
 
     @After("log()")

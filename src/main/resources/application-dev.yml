@@ -1,7 +1,7 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://120.76.44.224:3306/blog?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.76.44.224:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: blog
     password: blog
   jpa:
@@ -9,13 +9,14 @@ spring:
       ddl-auto: update
     show-sql: true
 server:
-  port: 9999
+  port: 8080
 
 logging:
   level:
     root: info
     com.lrm: info
-  file: log/blog-dev.log
+  file:
+    path: log/blog-dev.log
 
 
 
